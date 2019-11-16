@@ -1,0 +1,283 @@
+/* All settings except for the IE hacks and media queries at the bottom assume a smartphone display. */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+a:link, a:visited {
+    color: #134b36;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+}
+
+#topShield {
+    display: none;
+}
+
+#topLogo {
+    fill: #134b36;
+    margin-bottom: 1em;
+    display: block;
+    width: 90%;
+    margin: auto auto 10px;
+}
+
+#duo_iframe {
+    width: 100%;
+    min-width: 304px;
+    max-width: 620px;
+    height: 330px;
+}
+
+label {
+    float: left;
+    display: block;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+    padding-bottom: unset;
+    position: relative;
+}
+
+form label { /* labels are hidden */
+    font-weight: unset;
+}
+
+form legend {
+    font-size:1.2em;
+    margin-bottom: 12px;
+}
+
+.form-element-wrapper {
+    padding: 6px;
+    border: none;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.form-element {
+    padding: 13px 12px;
+    border: none;
+    font-size: 14px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.form-field {
+    color: #B7B7B7;
+    border: 1px solid #B7B7B7;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+
+.form-field-focus,
+.form-field:focus,
+input[type="text"]:focus {
+    color: #4D4F53;
+}
+
+a:focus,
+.form-field:focus,
+.form-button:focus {
+    outline-color: #b4a76c;
+}
+
+.form-button {
+    background: #134b36;
+    color: #fefefe;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    z-index: 3;
+}
+
+.form-button:hover {
+    background: #024434;
+}
+
+.form-error {
+    padding-top: unset;
+    padding-bottom: unset;
+    color: #FF1601;
+}
+
+.list-error-message {
+    margin-left: 20px;
+}
+
+.list-help {
+    margin-top: 5%; /* offset padding on first anchor */
+    list-style: none;
+}
+
+.list-help-item {
+    font-weight: bold;
+}
+
+.list-help-item a {
+    display: block;
+    padding: 6px 0;
+}
+
+.item-marker {
+    color: #fefefe;
+}
+
+.footer {
+    background: transparent;
+    bottom: 0;
+    color: #fefefe;
+    display: table-cell;
+    font-size: 11px;
+    left: 0;
+    padding-top: 12px;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    z-index: 2;
+}
+
+.footer-text {
+    margin-bottom: 12px;
+    display: none;
+}
+
+#password {
+    margin-bottom: 4px;
+}
+
+.input-medium {
+    float: left;
+    clear: both;
+}
+
+.center-text {
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+body {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #fefefe;
+    background: #fefefe;
+    height: 100%;
+}
+
+.wrapper {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background: #fefefe;
+    box-sizing: border-box;
+    color: #4D4F53;
+    display: table-cell;
+    padding: 0 40px;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+    z-index: 2;
+    margin-top: 30px;
+}
+
+/* For IE 8 and below, the SVG does not render. Additionally, on IE 7 and below, the normal responsive percentages used throughout do not work. 
+   Consequently, we use pixels for width values, aiming to be centered at 400px. 
+   We chose this resolution due to the fact that IE 8 and below would most likely be used on embedded browsers like the Windows Outlook client and the Windows VPN client. 
+   Those clients launch their browser windows as popups with limited horizontal space. */
+.ancient-ie .fallback-logo {
+    width: 300px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+}
+
+/* Note the width of the wrapper is less than the width of the button because of the inconsistency that IE handles the width of this type of box. */
+.ancient-ie .form-element-wrapper {
+    width: 386px;
+    padding-left: 20px;
+    display: block;
+}
+
+/* Hack for IE 7 to fix width of box. */
+.ancient-ie .form-element-wrapper {
+    *width: 334px;
+}
+
+.ancient-ie .form-button {
+    width: 360px;
+    padding-left: 20px;
+}
+
+/* The intent of this is to limit the size of the container on devices with larger resolutions than a typical phone held with a portrait orientation. */
+@media all and (min-width: 601px){
+    .container  {
+        width: 450px;
+    }
+}
+
+/* The intent of this is to apply the desktop-related stylings (shadow box, background, and more padding between elements). 
+   Note that this query targets by resolution or by presence of IE 10/11 specific properties (which does not support min-height in media queries). */
+@media all and (min-width: 601px) and (min-height: 415px),
+    (-ms-high-contrast: active), 
+    (-ms-high-contrast: none)  {
+
+    body {
+        background-color: #dddddb;
+    }
+
+
+    .container {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        padding: 40px;
+        border-top: 10px solid #c69214;
+    }
+
+    .header  {
+        padding: 0 13px;
+    }
+    
+    .form-element-wrapper {
+        padding: 13px 12px;
+    }
+
+    .submit-block {
+        padding-bottom: 0;
+    }
+    
+    /* For non-mobile devices, vertically align the form in the center */
+    .container {
+        margin-top: 0;
+    }
+    .wrapper {
+        justify-content: center;
+    }
+}
