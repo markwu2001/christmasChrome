@@ -1,0 +1,34 @@
+{
+  "name": "Getting Started Example",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "manifest_version": 2
+}
+
+
+//tells Chrome what to do with the extension
+{
+  "name": "The Greeting Dashboard", //defines what the name of this is
+
+  "version": "1.0", "what the version number is"
+
+  "description": "The Chrome Extension pops up whenever a certain tab is opened"
+
+  "manifest_version": 2 //this is the lastest version of the manifest.jeon for the chrome extension
+
+  "incognito": "split", //allows this to run even when in incognito
+
+  "chrome_url_overrides": {
+    "newtab": "https://myportal.calpoly.edu/f/u17l1s6/normal/render.uP" //opens the extension when this url is open
+  },
+
+  "permissions": [
+    "activetab"  // gives the user a heads up that this will override the new tab when they try to install it
+  ],
+
+  "icons": {
+    "256": "THE IMAGE FILE"  // this is the icon that will show up and what the image size will be
+  }
+
+
+}
