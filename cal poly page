@@ -1,0 +1,338 @@
+<!DOCTYPE html><html lang="en-US"><head><title>My Cal Poly Portal: Home</title><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="description" content="uPortal by Jasig: The academic open source portal built for higher education by higher education"/><meta name="keywords" content="portal, uPortal, academic, higher education, open source, enterprise, JA-SIG, JASIG, Jasig"/><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/><link href="https://webresource.its.calpoly.edu/dojo/build/1.9.10/4/dijit/themes/claro/claro.css" rel="stylesheet" type="text/css"/><link href="https://webresource.its.calpoly.edu/dojo/build/1.9.10/4/dojox/grid/resources/claroGrid.css" rel="stylesheet" type="text/css"/><link href="https://webresource.its.calpoly.edu/dojo/build/1.9.10/4/dojox/grid/enhanced/resources/claro/EnhancedGrid.css" rel="stylesheet" type="text/css"/><link href="https://webresource.its.calpoly.edu/dojo/build/1.9.10/4/dojox/calendar/themes/claro/Calendar.css" rel="stylesheet" type="text/css"/><link href="https://webresource.its.calpoly.edu/dojo/build/1.9.10/4/dojox/calendar/themes/claro/SimpleColumnView.css" rel="stylesheet" type="text/css"/><link href="/ResourceServingWebapp/rs/fluid/1.4.0/fss/css/fss-framework-1.4.0.min.css" rel="stylesheet" type="text/css"/><link href="/ResourceServingWebapp/rs/jqueryui/1.8.13/theme/smoothness/jquery-ui-1.8.13-smoothness.min.css" rel="stylesheet" type="text/css"/><link href="/media/skins/universality/common/css/aOTEcnHm6PTmgVgk0Y5LCQ.aggr.min.css" rel="stylesheet" type="text/css"/><link href="/media/skins/universality/wintergreen/uQSewntFzD6Otuwb5ZbigQ.aggr.min.css" rel="stylesheet" type="text/css"/><script src="/ResourceServingWebapp/rs/jquery/1.6.4/jquery-1.6.4.min.js" type="text/javascript"> </script><script src="/ResourceServingWebapp/rs/jquery-plugins/form/3.18/jquery.form-3.18.min.js" type="text/javascript"> </script><script src="/ResourceServingWebapp/rs/jquery-plugins/validation/1.10.0/jquery.validate-1.10.0.min.js" type="text/javascript"> </script><script src="/ResourceServingWebapp/rs/jquery-plugins/validation/1.10.0/additional-methods-1.10.0.min.js" type="text/javascript"> </script><script src="/ResourceServingWebapp/rs/jquery-plugins/cookie/1.0/jquery.cookie-1.0.min.js" type="text/javascript"> </script><script src="/ResourceServingWebapp/rs/jqueryui/1.8.13/jquery-ui-1.8.13.min.js" type="text/javascript"> </script><script src="/ResourceServingWebapp/rs/underscore/1.3.3/underscore-1.3.3.min.js" type="text/javascript"> </script><script src="/ResourceServingWebapp/rs/backbone/0.9.9/backbone-0.9.9.min.js" type="text/javascript"> </script><script src="/ResourceServingWebapp/rs/fluid/1.4.0/js/fluid-all-1.4.0.min.js" type="text/javascript"> </script><script src="/media/skins/universality/common/javascript/ugO56jlK_dTpmhUjD6JS8A.aggr.min.js" type="text/javascript"> </script><script type="text/javascript">
+            var up = up || {};
+            up.jQuery = jQuery.noConflict(true);
+            up.fluid = fluid;
+            up._ = _.noConflict();
+            up._.templateSettings = {
+              interpolate : /{{=(.+?)}}/g,
+              evaluate    : /{{(.+?)}}/g
+            };
+            up.Backbone = Backbone.noConflict();
+            fluid = null;
+            fluid_1_4 = null;
+            window.cp = window.cp || {};
+            cp.isMobile = false;
+            cp.webResourceUrl = 'https://webresource.its.calpoly.edu';
+        </script><script>
+      dojoConfig= {
+        baseUrl:"https://webresource.its.calpoly.edu/dojo/build/1.9.10/4/dojo",
+        isDebug: false,
+        async: true,
+        tlmSiblingOfDojo: false,
+        packages:[
+        {name:"NotificationsPortlet", location:'https://webresource.its.calpoly.edu/v2/notifications/20/js'}
+        ],
+        portal:{
+          iconsPath:"https://webresource.its.calpoly.edu/portal-icons/sage/"
+        }
+      };
+      </script><script src="https://webresource.its.calpoly.edu/dojo/build/1.9.10/4/calpoly/PortalDojo.js" type="text/javascript"></script><script src="https://webresource.its.calpoly.edu/v2/singleclick/150/js/track.js" type="text/javascript"></script><script src="https://webresource.its.calpoly.edu/v2/singleclick/150/js/sidelinks.js" type="text/javascript"></script><script src="https://webresource.its.calpoly.edu/v2/notifications/20/js/portal-header-notifications.js" type="text/javascript"></script><script type="text/javascript" src="/js/nr-browser-agent.js"></script></head><body id="portal" class="up  claro"><div id="portalPage" class="logged-in dashboard fl-container-flex"><div id="portalPageInner" class="layout-2-columns  "><div id="headArea"><div id="portalPageHeader" class="fl-container-flex"><div id="portalPageHeaderInner"><div id="portalSkipNav"><a href="#portalNavigation" title="Skip to page navigation" id="skipToNav" accesskey="N">Skip to page navigation</a><a href="#portalPageBody" title="Skip to page content" id="skipToContent" accesskey="C">Skip to page content</a></div><div id="logoContainer"><div id="portalLogo"><a href="http://www.calpoly.edu" title="Go to Home"><img src="/media/skins/universality/wintergreen/images/portal_logo_195x47.svg" alt="Cal Poly, San Luis Obispo" title="Go to Cal Poly Home"/></a></div><div id="portalLogoText"><a href="/f/u17l1s6/normal/render.uP" title="Go to Home">
+           My Portal
+         </a></div></div><div id="portalPageBar"><div id="portalPageBarLinks"><div id="portalHeaderUtilities"><div id="portalHeaderUtilitiesTop"><div id="portalWelcome">Welcome
+         <span class="user-name">Pranathi Manga</span></div><i>|</i><a id="logoutLink" href="/Logout" title="Log off and exit the portal"><span>Sign Out</span></a></div><div id="portalHeaderUtilitiesBottom"><div id="webSearchContainer" class="fl-widget"><form method="post" action="/p/search.ctf1/max/action.uP" id="webSearchForm"><input id="webSearchInput" value="" name="query" type="text" maxlength="255" alt="Search Text" title="Search the Portal"/><input id="webSearchSubmit" type="submit" name="submit" alt="Search" title="Submit Search Query" value="Search"/></form></div></div></div></div></div><div id="portalHeaderBlock"></div></div></div><div id="portalNavigation"><div id="portalNavigationInner" class="header"><ul id="portalNavigationList" class="fl-tabs flc-reorderer-column"><li class="portal-navigation-add-item"><a href="javascript:;" title="Add Tab" class="portal-navigation-add">Add Tab</a></li><li id="portalNavigation_u17l1s6" class="portal-navigation first active fl-tabs-active movable editable  canAddChildren"><a id="tabLink_u17l1s6" href="/f/u17l1s6/normal/render.uP" title="Home" class="portal-navigation-link flc-inlineEditable"><span title="Click to edit tab name" class="portal-navigation-label flc-inlineEdit-text">Home</span></a><a href="javascript:;" class="portal-navigation-gripper active fl-tabs-active" title="Move this tab"><span>Move</span></a></li><li id="portalNavigation_u18l1s6" class="portal-navigation   locked   "><a id="tabLink_u18l1s6" href="/f/u18l1s6/normal/render.uP" title="Admissions" class="portal-navigation-link "><span title="" class="portal-navigation-label ">Admissions</span></a><a href="javascript:;" class="portal-navigation-gripper " title="Move this tab"><span>Move</span></a></li><li id="portalNavigation_u15l1s6" class="portal-navigation   locked   "><a id="tabLink_u15l1s6" href="/f/u15l1s6/normal/render.uP" title="What''s Next" class="portal-navigation-link "><span title="" class="portal-navigation-label ">What's Next</span></a><a href="javascript:;" class="portal-navigation-gripper " title="Move this tab"><span>Move</span></a></li><li id="portalNavigation_u38l1s6" class="portal-navigation   locked   "><a id="tabLink_u38l1s6" href="/f/u38l1s6/normal/render.uP" title="Orientation Events" class="portal-navigation-link "><span title="" class="portal-navigation-label ">Orientation Events</span></a><a href="javascript:;" class="portal-navigation-gripper " title="Move this tab"><span>Move</span></a></li><li id="portalNavigation_u21l1s5" class="portal-navigation   movable editable  canAddChildren"><a id="tabLink_u21l1s5" href="/f/u21l1s5/normal/render.uP" title="Academics" class="portal-navigation-link "><span title="" class="portal-navigation-label ">Academics</span></a><a href="javascript:;" class="portal-navigation-gripper " title="Move this tab"><span>Move</span></a></li><li id="portalNavigation_u40l1s6" class="portal-navigation   movable   "><a id="tabLink_u40l1s6" href="/f/u40l1s6/normal/render.uP" title="Money Matters" class="portal-navigation-link "><span title="" class="portal-navigation-label ">Money Matters</span></a><a href="javascript:;" class="portal-navigation-gripper " title="Move this tab"><span>Move</span></a></li><li id="portalNavigation_u14l1s6" class="portal-navigation   movable editable  canAddChildren"><a id="tabLink_u14l1s6" href="/f/u14l1s6/normal/render.uP" title="Personal Info" class="portal-navigation-link "><span title="" class="portal-navigation-label ">Personal Info</span></a><a href="javascript:;" class="portal-navigation-gripper " title="Move this tab"><span>Move</span></a></li><li id="portalNavigation_u19l1s5" class="portal-navigation   movable   "><a id="tabLink_u19l1s5" href="/f/u19l1s5/normal/render.uP" title="Library" class="portal-navigation-link "><span title="" class="portal-navigation-label ">Library</span></a><a href="javascript:;" class="portal-navigation-gripper " title="Move this tab"><span>Move</span></a></li><li id="portalNavigation_u27l1s5" class="portal-navigation last  movable editable deletable canAddChildren"><a id="tabLink_u27l1s5" href="/f/u27l1s5/normal/render.uP" title="ASI" class="portal-navigation-link "><span title="" class="portal-navigation-label ">ASI</span></a><a href="javascript:;" class="portal-navigation-gripper " title="Move this tab"><span>Move</span></a></li></ul></div></div><script type="text/javascript">
+      up.jQuery(".portal-navigation").click(function(event){
+        if (typeof newrelic == 'object') {
+          var tabId = event.currentTarget.id;
+          var tabName = event.target.innerText;
+          var idArr = tabId.split("portalNavigation_");
+          var type = "Unknown";
+
+          if (idArr.length > 1){
+            // Default portal tab IDs look like: portalNavigation_u18l1s6, custom: portalNavigation_s21
+            type = idArr[1].charAt(0) === 'u' ? "Default" : "Custom"
+          }
+          newrelic.addPageAction('clicked_portal_tab', {title: tabName, type: type});
+        }
+      });
+    </script></div><div class="up-gallery"><h2 class="handle"><a class="button"><span class="handle-arrow-down">Customize</span></a></h2><div class="fl-fix fl-col-mixed fl-col-mixed2 gallery-inner" style="display:none"><div class="fl-col-side fl-force-left menu-wrapper"><ul class="menu" role="menu"><li class="add-content-link active" role="tab"><a href="javascript:;"><span>Add Portlets</span></a></li><li class="use-content-link" role="tab"><a href="javascript:;"><span>Use Now!</span></a></li><li class="skin-link" role="tab"><a href="javascript:;"><span>Colors</span></a></li><li class="layout-link last" role="tab"><a href="javascript:;"><span>Layouts</span></a></li></ul><div class="close-button"><a class="button"><span>I'm Done</span></a></div></div><div class="fl-col-main content-wrapper" role="tabpanel"><div class="fl-fix content"><div class="fl-fix fl-col-mixed fl-col-mixed2 pane add-content"><div class="fl-col-fixed fl-force-left content-filters-wrapper"><div class="categories-column active"><h3 class="portlet-list-link"><span>Portlets</span></h3><div class="categories-wrapper active"><div class="portlet-search-view"><form class="portlet-search-form"><label for="portletSearch">Search for Portlets to add</label><input id="portletSearch" name="portletSearch" class="portlet-search-input" type="text" value="Search"/><input type="submit" value="Search" class="portlet-search-submit"/></form></div><div class="categories"><h4>Categories</h4><div class="category-choice-container"><ul><li class="category-choice"><a href="javascript:;" class="category-choice-link"><span class="category-choice-name"></span></a></li></ul></div><div class="clear-float"></div></div></div></div><div class="packages-column"><h3 class="package-list-link"><span>Tab Packages</span></h3><div class="packages-wrapper"><div class="packages"><p>Adding a package creates a new tab and puts the packaged portlets on it</p></div></div></div></div><div class="content-results-wrapper fl-col-main"><div class="column-inner"><div class="results-wrapper fl-col-mixed2"><div class="pager-column fl-col-side fl-force-right"><div class="column-inner"></div></div><div class="results-column fl-col-main fl-fix"><div class="results-wrapper portlet-results fl-col-mixed2"><div class="pager-column fl-col-side fl-force-right"><div class="column-inner"><div class="pager flc-pager-top"><div class="pager-button-up flc-pager-previous"><a class="pager-button-up-inner" href="javascript:;"><span>Up</span></a></div><div style="display:none"><ul class="fl-pager-links flc-pager-links" style="margin:0; display:inline"><li class="flc-pager-pageLink"><a href="javascript:;">1</a></li><li class="flc-pager-pageLink-disabled">2</li><li class="flc-pager-pageLink"><a href="javascript:;">3</a></li></ul></div><div class="pager-pagination"></div><div style="display:none"><span class="flc-pager-summary">Show</span><span><select class="pager-page-size flc-pager-page-size"></select></span></div><div class="pager-button-down flc-pager-next"><a class="pager-button-down-inner" href="javascript:;"><span>Down</span></a></div></div></div></div><div class="results-column fl-col-main ui-helper-clearfix"><ul id="addContentPortletList" class="results-list portlet-list"><li class="result-item portlet"><div class="ri-wrapper portlet-wrapper"><a class="ri-utility portlet-thumb-gripper" href="javascript:;" title="Drag to add content"><span>Drag Handle</span></a><a href="javascript:;" class="ri-link portlet-thumb-link"><span>Add</span></a><div class="ri-content portlet-thumb-content ui-helper-clearfix"><div class="ri-titlebar portlet-thumb-titlebar"></div><div class="ri-icon portlet-thumb-icon"><span>Thumbnail</span></div><div class="ri-description portlet-thumb-description">Description</div></div></div></li></ul></div></div><div class="results-wrapper package-results fl-col-mixed2" style="display:none"><div class="pager-column fl-col-side fl-force-right"><div class="column-inner"><div class="pager flc-pager-top"><div class="pager-button-up flc-pager-previous"><a class="pager-button-up-inner" href="javascript:;"><span>Up</span></a></div><div style="display:none"><ul class="fl-pager-links flc-pager-links" style="margin:0; display:inline"><li class="flc-pager-pageLink"><a href="javascript:;">1</a></li><li class="flc-pager-pageLink-disabled">2</li><li class="flc-pager-pageLink"><a href="javascript:;">3</a></li></ul></div><div class="pager-pagination"></div><div style="display:none"><span class="flc-pager-summary">Show</span><span><select class="pager-page-size flc-pager-page-size"></select></span></div><div class="pager-button-down flc-pager-next"><a class="pager-button-down-inner" href="javascript:;"><span>Down</span></a></div></div></div></div><div class="results-column fl-col-main"><ul class="results-list package-list ui-helper-clearfix"><li class="results-item package"><div class="ri-wrapper package-wrapper"><div class="ri-utility"></div><a href="javascript:;" class="ri-link package-link"><span>Subscribe</span></a><div class="ri-content package-content ui-helper-clearfix"><div class="ri-titlebar package-titlebar">Titlebar</div><div class="ri-icon package-icon"><span>Thumbnail</span></div><div class="ri-description package-description">Description</div></div></div></li></ul></div></div></div><div class="clear-float"></div></div></div></div><div class="content-modal content-loading"></div></div><div class="fl-fix fl-col-mixed fl-col-mixed2 use-content" style="display:none"><div class="fl-col-fixed fl-force-left content-filters-wrapper"><div class="categories-column active"><h3 class="portlet-list-link"><span>Portlets</span></h3><div class="categories-wrapper active"><div class="portlet-search-view"><form class="portlet-search-form"><div class="search"><input class="portlet-search-input" type="text"/></div></form></div><div class="categories"><h4>Categories</h4><div class="category-choice-container"><ul><li class="category-choice"><a href="javascript:;" class="category-choice-link"><span class="category-choice-name"></span></a></li></ul></div><div class="clear-float"></div></div></div></div></div><div class="content-results-wrapper fl-col-main"><div class="column-inner"><div class="results-wrapper fl-col-mixed2"><div class="pager-column fl-col-side fl-force-right"><div class="column-inner"></div></div><div class="results-column fl-col-main fl-fix"><div class="results-wrapper portlet-results fl-col-mixed2"><div class="pager-column fl-col-side fl-force-right"><div class="column-inner"><div class="pager flc-pager-top"><div class="pager-button-up flc-pager-previous"><a class="pager-button-up-inner" href="javascript:;"><span>Up</span></a></div><div style="display:none"><ul class="fl-pager-links flc-pager-links" style="margin:0; display:inline"><li class="flc-pager-pageLink"><a href="javascript:;">1</a></li><li class="flc-pager-pageLink-disabled">2</li><li class="flc-pager-pageLink"><a href="javascript:;">3</a></li></ul></div><div class="pager-pagination"></div><div style="display:none"><span class="flc-pager-summary">Show</span><span><select class="pager-page-size flc-pager-page-size"></select></span></div><div class="pager-button-down flc-pager-next"><a class="pager-button-down-inner" href="javascript:;"><span>Down</span></a></div></div></div></div><div class="results-column fl-col-main ui-helper-clearfix"><ul id="useContentPortletList" class="results-list portlet-list"><li class="result-item portlet"><div class="ri-wrapper portlet-wrapper"><div class="ri-utility"></div><a href="javascript:;" class="ri-link portlet-thumb-link"><span>Use</span></a><div class="ri-content portlet-thumb-content ui-helper-clearfix"><div class="ri-titlebar portlet-thumb-titlebar"></div><div class="ri-icon portlet-thumb-icon"><span>Thumbnail</span></div><div class="ri-description portlet-thumb-description">Description</div></div></div></li></ul></div></div></div><div class="clear-float"></div></div></div></div></div><div class="skins" style="display:none"><div class="content-results-wrapper"><div class="column-inner"><div class="results-wrapper"><ul class="results-list skins-list"><li class="results-item skin"><div class="ri-wrapper skins-wrapper"><a class="ri-link skin-link" href="javascript:;"><div class="ri-titlebar skin-titlebar"></div><div class="ri-content"><div class="ri-icon skin-thumb"><span>Thumbnail</span></div></div></a></div></li></ul></div></div></div></div><div class="layouts" style="display:none"><div class="content-results-wrapper"><div class="column-inner"><div class="results-wrapper"><ul class="results-list layouts-list"><li class="results-item layout"><div class="ri-wrapper layout-wrapper"><a class="ri-link layout-link" href="javascript:;"><div class="ri-titlebar layout-titlebar"></div><div class="ri-content"><div class="ri-icon layout-thumb"><span>Thumbnail</span></div><div class="ri-description layout-description"></div></div></a></div></li></ul></div></div></div></div></div></div><div id="galleryLoader" class="gallery-loader"><span>Loading</span></div></div></div><div id="portalPageBody" class="fl-container-flex fl-fix"><div id="portalPageBodyInner"><div id="portalPageBodyLayout" class="fl-container-flex"><div id="portalPageBodyMessage"></div><div id="portalContentTopBlock"></div><div id="portalPageBodyTitleRow"><div id="portalPageBodyTitleRowContents"></div></div><div id="portalPageBodyColumns" class=" &#xa;    &#x9;&#x9;columns-2"><div id="column_u17l1s9" class="portal-page-column  &#xa;        &#x9;column-1 fl-container-flex60 movable  editable canAddChildren" style="clear: none;"><div id="inner-column_u17l1s9" class="portal-page-column-inner"><div id="portlet_u17l1n1842" class="fl-widget up-portlet-wrapper myclasses movable deletable   "><div class="up-portlet-wrapper-inner"><div class="up-portlet-wrapper-top"><div class="up-portlet-wrapper-top-inner"></div></div><div id="toolbar_u17l1n1842" class="fl-widget-titlebar up-portlet-titlebar"><a href="/f/u17l1s6/normal/render.uP?pCt=myclasses.u17l1n1842&amp;pCs=minimized&amp;pCp" title="Enter minimized mode for this portlet" class="up-portlet-control hide-content"><span class="icon"></span><span class="label">Minimize</span></a><h2><a id="u17l1n1842" href="/f/u17l1s6/p/myclasses.u17l1n1842/max/render.uP?pCp">
+                  My Classes
+                </a></h2><div class="up-portlet-controls"><a title="Enter maximized mode for this portlet" href="/f/u17l1s6/p/myclasses.u17l1n1842/max/render.uP?pCp" class="up-portlet-control focus"><span class="icon"></span><span class="label">Maximize</span></a><a id="removePortlet_u17l1n1842" title="Are you sure you want to remove this portlet?" href="/f/u17l1s6/p/myclasses.u17l1n1842/normal/action.uP?u_remove_target=u17l1n1842" class="up-portlet-control remove"><span class="icon"></span><span class="label">Remove</span></a></div></div><div id="portletContent_u17l1n1842" class="fl-widget-content fl-fix up-portlet-content-wrapper"><div class="up-portlet-content-wrapper-inner">
+<style>
+    .dojoxCalendarSimpleColumnView .dojoxCalendarEvent.LAB .bg {
+        background-image: url("https://webresource.its.calpoly.edu/portlet/CoursesPortlet/images/1/flask.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+</style>
+
+<link href="https://webresource.its.calpoly.edu/v2/courses/42/css/CoursesPortlet.min.css" rel="stylesheet" type="text/css"/>
+<div id="Pluto_33_u17l1n1842_365663_portletContent"></div>
+<div class="portlet-msg-info">Class data may be up to 24 hours old; PolyLearn links may take up to 4 hours to update.
+Visit the
+<a target="_blank" href="https://idp.calpoly.edu/idp/profile/cas/login?method=post&amp;service=https://cmsweb.pscs.calpoly.edu/psp/CSLOPRD/EMPLOYEE/SA/c/SA_LEARNER_SERVICES.SSS_STUDENT_CENTER.GBL?FolderPath=PORTAL_ROOT_OBJECT.CO_EMPLOYEE_SELF_SERVICE.HC_SSS_STUDENT_CENTER%26IsFolder=false%26IgnoreParamTempl=FolderPath%2cIsFolder%26RL=%26target=main0%26navc=2398?cmd=login%26languageCd=ENG%26userid=PS%26pwd=z">Student Center</a> for your latest class information and <a target="_blank" href="https://polylearn.calpoly.edu/login/index.php">PolyLearn Home</a> for your PolyLearn courses.
+</div>
+<script type="text/javascript">
+require(['dijit/PortalBasicDijit', 'dojox/PortalCalendar'], function(){
+require({
+    packages: [
+        {name:"MyClassesPortlet", location: "https://webresource.its.calpoly.edu/v2/courses/42/js", main:"MyClasses"}
+    ]
+    },
+    ["MyClassesPortlet", "dojo/domReady!"], function(Portlet){
+        new Portlet({
+            id:"Pluto_33_u17l1n1842_365663_CoursesPortlet",
+            namespace:"Pluto_33_u17l1n1842_365663_",
+            contextPath:"/CoursesPortlet",
+            windowState:"normal",
+            renderNormalURL:"/f/u17l1s6/normal/render.uP?pCt=myclasses.u17l1n1842&pCs=normal",
+            studySessionTermCode:"2202",
+            studySessionTopics:{"PHYS141":{"id":35,"subject":"PHYS","catalogNumber":"141","title":"PHYS-141"},"PHYS121":{"id":30,"subject":"PHYS","catalogNumber":"121","title":"PHYS-121"},"PHYS122":{"id":31,"subject":"PHYS","catalogNumber":"122","title":"PHYS-122"},"CE204":{"id":5,"subject":"CE","catalogNumber":"204","title":"CE-204"},"CHEM128":{"id":11,"subject":"CHEM","catalogNumber":"128","title":"CHEM-128"},"MATH143":{"id":22,"subject":"MATH","catalogNumber":"143","title":"MATH-143"},"CHEM129":{"id":12,"subject":"CHEM","catalogNumber":"129","title":"CHEM-129"},"MATH221":{"id":25,"subject":"MATH","catalogNumber":"221","title":"MATH-221"},"MATH244":{"id":27,"subject":"MATH","catalogNumber":"244","title":"MATH-244"},"CE207":{"id":6,"subject":"CE","catalogNumber":"207","title":"CE-207"},"CHEM127":{"id":10,"subject":"CHEM","catalogNumber":"127","title":"CHEM-127"},"CHEM124":{"id":8,"subject":"CHEM","catalogNumber":"124","title":"CHEM-124"},"MATH161":{"id":23,"subject":"MATH","catalogNumber":"161","title":"MATH-161"},"CHEM125":{"id":9,"subject":"CHEM","catalogNumber":"125","title":"CHEM-125"},"MATH162":{"id":24,"subject":"MATH","catalogNumber":"162","title":"MATH-162"},"BIO160":{"id":2,"subject":"BIO","catalogNumber":"160","title":"BIO-160"},"MATH141":{"id":20,"subject":"MATH","catalogNumber":"141","title":"MATH-141"},"MATH142":{"id":21,"subject":"MATH","catalogNumber":"142","title":"MATH-142"},"MATH241":{"id":26,"subject":"MATH","catalogNumber":"241","title":"MATH-241"},"BIO162":{"id":4,"subject":"BIO","catalogNumber":"162","title":"BIO-162"},"STAT252":{"id":39,"subject":"STAT","catalogNumber":"252","title":"STAT-252"},"BIO161":{"id":3,"subject":"BIO","catalogNumber":"161","title":"BIO-161"},"STAT251":{"id":38,"subject":"STAT","catalogNumber":"251","title":"STAT-251"},"BIO111":{"id":1,"subject":"BIO","catalogNumber":"111","title":"BIO-111"},"CPE202":{"id":17,"subject":"CPE","catalogNumber":"202","title":"CPE-202"},"CPE203":{"id":16,"subject":"CPE","catalogNumber":"203","title":"CPE-203"},"PHYS131":{"id":32,"subject":"PHYS","catalogNumber":"131","title":"PHYS-131"},"MATH116":{"id":18,"subject":"MATH","catalogNumber":"116","title":"MATH-116"},"PHYS132":{"id":33,"subject":"PHYS","catalogNumber":"132","title":"PHYS-132"},"PHYS133":{"id":34,"subject":"PHYS","catalogNumber":"133","title":"PHYS-133"},"MATH117":{"id":41,"subject":"MATH","catalogNumber":"117","title":"MATH-117"},"CHEM216":{"id":14,"subject":"CHEM","catalogNumber":"216","title":"CHEM-216"},"CPE101":{"id":15,"subject":"CPE","catalogNumber":"101","title":"CPE-101"},"ME212":{"id":29,"subject":"ME","catalogNumber":"212","title":"ME-212"},"ME211":{"id":28,"subject":"ME","catalogNumber":"211","title":"ME-211"},"CHEM312":{"id":13,"subject":"CHEM","catalogNumber":"312","title":"CHEM-312"},"CHEM110":{"id":7,"subject":"CHEM","catalogNumber":"110","title":"CHEM-110"},"STAT218":{"id":37,"subject":"STAT","catalogNumber":"218","title":"STAT-218"},"STAT217":{"id":36,"subject":"STAT","catalogNumber":"217","title":"STAT-217"},"MATH118":{"id":19,"subject":"MATH","catalogNumber":"118","title":"MATH-118"},"MATH119":{"id":42,"subject":"MATH","catalogNumber":"119","title":"MATH-119"}},
+            studySessionEnrollmentRequest:null
+        }, "Pluto_33_u17l1n1842_365663_portletContent").startup();
+    }
+);
+});
+</script>
+</div></div><div class="up-portlet-wrapper-bottom"><div class="up-portlet-wrapper-bottom-inner"></div></div></div></div></div></div><div id="column_u17l1s12" class="portal-page-column  &#xa;        &#x9;column-2 fl-container-flex40 movable deletable editable canAddChildren" style="clear: none;"><div id="inner-column_u17l1s12" class="portal-page-column-inner"><div id="portlet_u17l1n576" class="fl-widget up-portlet-wrapper AnnouncementsDisplay movable deletable   "><div class="up-portlet-wrapper-inner"><div class="up-portlet-wrapper-top"><div class="up-portlet-wrapper-top-inner"></div></div><div id="toolbar_u17l1n576" class="fl-widget-titlebar up-portlet-titlebar"><a href="/f/u17l1s6/normal/render.uP?pCt=AnnouncementsDisplay.u17l1n576&amp;pCs=normal&amp;pCp" title="Return to the dashboard view" class="up-portlet-control show-content"><span class="icon"></span><span class="label">Return to dashboard</span></a><h2><a id="u17l1n576" href="/f/u17l1s6/p/AnnouncementsDisplay.u17l1n576/max/render.uP?pCp">
+                  Campus Announcements
+                </a></h2><div class="up-portlet-controls"><a href="/f/u17l1s6/normal/render.uP?pCt=AnnouncementsDisplay.u17l1n576&amp;pCm=edit&amp;pCp#u17l1n576" title="Edit Portlet" class="up-portlet-control edit"><span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span><span class="label">Edit</span></a><a id="removePortlet_u17l1n576" title="Are you sure you want to remove this portlet?" href="/f/u17l1s6/p/AnnouncementsDisplay.u17l1n576/normal/action.uP?u_remove_target=u17l1n576" class="up-portlet-control remove"><span class="icon"></span><span class="label">Remove</span></a></div></div><div id="portletContent_u17l1n576" class="fl-widget-content fl-fix up-portlet-content-wrapper"><div class="up-portlet-content-wrapper-inner"></div></div><div class="up-portlet-wrapper-bottom"><div class="up-portlet-wrapper-bottom-inner"></div></div></div></div><div id="portlet_u17l1n1869" class="fl-widget up-portlet-wrapper directoryinfo movable deletable   "><div class="up-portlet-wrapper-inner"><div class="up-portlet-wrapper-top"><div class="up-portlet-wrapper-top-inner"></div></div><div id="toolbar_u17l1n1869" class="fl-widget-titlebar up-portlet-titlebar"><a href="/f/u17l1s6/normal/render.uP?pCt=directoryinfo.u17l1n1869&amp;pCs=minimized&amp;pCp" title="Enter minimized mode for this portlet" class="up-portlet-control hide-content"><span class="icon"></span><span class="label">Minimize</span></a><h2><a id="u17l1n1869" href="/f/u17l1s6/p/directoryinfo.u17l1n1869/max/render.uP?pCp">
+                  Directory Information
+                </a></h2><div class="up-portlet-controls"><a title="Enter maximized mode for this portlet" href="/f/u17l1s6/p/directoryinfo.u17l1n1869/max/render.uP?pCp" class="up-portlet-control focus"><span class="icon"></span><span class="label">Maximize</span></a><a id="removePortlet_u17l1n1869" title="Are you sure you want to remove this portlet?" href="/f/u17l1s6/p/directoryinfo.u17l1n1869/normal/action.uP?u_remove_target=u17l1n1869" class="up-portlet-control remove"><span class="icon"></span><span class="label">Remove</span></a></div></div><div id="portletContent_u17l1n1869" class="fl-widget-content fl-fix up-portlet-content-wrapper"><div class="up-portlet-content-wrapper-inner">
+<style type="text/css">
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):after {
+    color:#619357;
+    content: " \25B4\25BE" 
+}
+table.sortable tbody tr:nth-child(2n+1) {
+   background:#f2f2f2;
+}
+
+</style>
+
+<script src="/directoryinfo/JavaScript/sorttable.js" type="text/javascript"></script>
+
+<script>
+function initSort()
+{
+    var myTH = document.getElementsByTagName("th")[0];
+    sorttable.innerSortFunction.apply(myTH, []);
+
+}
+</script>
+
+<p class="small">
+    Search this directory for Cal Poly student, faculty, and staff, department, club, and unit information.
+    Any use of this directory must comply with applicable
+    <a target="_blank" href="http://security.calpoly.edu/content/policies/rup/index"> University policies</a>.
+</p>
+
+<form method="POST" action="/f/u17l1s6/p/directoryinfo.u17l1n1869/max/action.uP?pP_action=search" >
+
+        <h2>Simple Search</h2>
+        <a class="small" href="/f/u17l1s6/p/directoryinfo.u17l1n1869/max/action.uP?pP_searchMode=advanced&amp;pP_action=configure">
+            Switch to Advanced Search</a>
+        <br>
+        <br>
+        <label for="personType">Category</label><br>
+        <div style="padding: 10px 0;">
+            <div style="float: left; padding: 0 20px 15px 0;">
+    <select id="personType" name="personType" >
+            <option value="all"    
+    selected="selected"
+>All</option>
+            <option value="student"    
+    
+>Student</option>
+            <option value="imp"    
+    
+>Faculty/Staff</option>
+            <option value="dept"    
+    
+>Depts/Clubs/Units</option>
+    </select>
+            </div>
+            <div style="float: left; padding-bottom: 15px;">
+                    <input type="text" id="simpleSearchParameters" name="simpleSearchParameters" value="" maxlength="30"     >
+
+  
+                <div style="padding-left: 15px; display: inline;">
+                    <input class="button" value="Search" name="submit" type="submit" />
+                </div>
+            </div>
+        </div>
+        <div style="clear: both;"><br></div>
+</form>
+
+
+</div></div><div class="up-portlet-wrapper-bottom"><div class="up-portlet-wrapper-bottom-inner"></div></div></div></div><div id="portlet_u17l1n1564" class="fl-widget up-portlet-wrapper sponsored_ad_1 movable deletable   "><div class="up-portlet-wrapper-inner"><div class="up-portlet-wrapper-top"><div class="up-portlet-wrapper-top-inner"></div></div><div id="toolbar_u17l1n1564" class="fl-widget-titlebar up-portlet-titlebar"><a href="/f/u17l1s6/normal/render.uP?pCt=sponsored_ad_1.u17l1n1564&amp;pCs=minimized&amp;pCp" title="Enter minimized mode for this portlet" class="up-portlet-control hide-content"><span class="icon"></span><span class="label">Minimize</span></a><h2><a id="u17l1n1564" href="/f/u17l1s6/p/sponsored_ad_1.u17l1n1564/max/render.uP?pCp">
+                  Apply to be a RA today!
+                </a></h2><div class="up-portlet-controls"><a title="Enter maximized mode for this portlet" href="/f/u17l1s6/p/sponsored_ad_1.u17l1n1564/max/render.uP?pCp" class="up-portlet-control focus"><span class="icon"></span><span class="label">Maximize</span></a><a id="removePortlet_u17l1n1564" title="Are you sure you want to remove this portlet?" href="/f/u17l1s6/p/sponsored_ad_1.u17l1n1564/normal/action.uP?u_remove_target=u17l1n1564" class="up-portlet-control remove"><span class="icon"></span><span class="label">Remove</span></a></div></div><div id="portletContent_u17l1n1564" class="fl-widget-content fl-fix up-portlet-content-wrapper"><div class="up-portlet-content-wrapper-inner">
+
+
+
+<link rel="stylesheet" href="/ContentManagementPortlet/javascript/jquery/css/redmond/jquery-ui-1.8.4.custom.css" type="text/css">
+<link rel="stylesheet" href="/ContentManagementPortlet/javascript/jquery/css/jquery.rating.css" media="screen" type="text/css" />
+<link rel="stylesheet" href="/ContentManagementPortlet/javascript/jquery/css/jquery.timepicker.css" type="text/css">
+<link rel="stylesheet" href="/ContentManagementPortlet/javascript/jquery/css/video-js.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/ContentManagementPortlet/javascript/jquery/css/jquery.fancybox.css" type="text/css" media="screen" />
+
+<script src="/ContentManagementPortlet/javascript/ckeditor/ckeditor.js" type="text/javascript"></script>
+<script src="/ContentManagementPortlet/javascript/jquery/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="/ContentManagementPortlet/javascript/jquery/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script>
+
+<script src="/ContentManagementPortlet/javascript/jquery/jquery.form.js" type="text/javascript"></script>
+<script src="/ContentManagementPortlet/javascript/jquery/jquery.rating.js" type="text/javascript"></script>
+<script src="/ContentManagementPortlet/javascript/jquery/jquery-ui-timepicker-addon.js" type="text/javascript"></script>
+<script src="/ContentManagementPortlet/javascript/jquery/video.js" type="text/javascript"></script>
+
+<script src="/ContentManagementPortlet/javascript/jquery/fancybox/jquery.easing-1.3.pack.js" type="text/javascript"></script>
+<script src="/ContentManagementPortlet/javascript/jquery/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+<script src="/ContentManagementPortlet/javascript/jquery/fancybox/jquery.mousewheel-3.0.6.pack.js" type="text/javascript"></script>
+
+<script language="javascript" src="/ContentManagementPortlet/javascript/cmp.js" type="text/javascript"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div>
+    <p>
+  <a href="http://www.housing.calpoly.edu/RA
+" target="_blank"> <img alt="Hey tRAilblazer! Lead the way where you live. Become a Resident Advisor!" src="https://content-calpoly-edu.s3.amazonaws.com/request/1/webform/UH_RA-Info-Session_Portal_2019-V5_portal%5B1%5D.jpg" style="height: auto; max-width: 80%; min-width: 80%;" /> </a></p>
+<h3>
+  Apply to be a RA today!</h3>
+<div>
+  <p>
+    University Housing is accepting RA applications for the 2020-2021 academic year until 9:00 PM on December 1. <br />
+    <br />
+    As an RA, you will gain leadership skills, get free housing, snag a meal plan, have a flexible schedule and build your community.</p>
+  <p style="text-align: center; margin-top: -8px;">
+    <br />
+    <a href="http://www.housing.calpoly.edu/RA
+" style="display:inline-block; padding: 10px; color: white; background: #035642; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;
+" target="_blank">Learn More about the RA Experience</a></p>
+</div>
+
+    </div>
+ 
+  
+
+  
+  
+
+     
+  
+  
+  
+  
+  
+  
+    
+    
+    
+  
+
+    
+<br />
+<div class="portlet-msg-alert portlet-msg alert" style="display:none" id="errorBlockContainer209219735Pluto_1396_u17l1n1564_365663_">
+  <pre style="text-align:left;" id="errorBlock209219735Pluto_1396_u17l1n1564_365663_"></p>
+</div>
+
+
+<div id="multimediaContainerIdPluto_1396_u17l1n1564_365663_" style="width:100%">
+  <div id="videoPlayerContainerIdPluto_1396_u17l1n1564_365663_"></div>  
+</div>
+
+<script type="text/javascript"> 
+  function postRatingUpdated_Pluto_1396_u17l1n1564_365663_(data, statusText, xhr, form) {
+    if (data.response.updateSuccessful) {
+      var updatedText = "(" + data.response.post.rateCount + " Rating(s))";
+      $("#postRatingCount35711653Pluto_1396_u17l1n1564_365663_").text(updatedText);
+    } 
+  }
+  
+  $('#errorBlockContainer209219735Pluto_1396_u17l1n1564_365663_').hide();
+      
+  $(document).ready(function(){ 
+    try {
+      var instance = contentManagementPortlet.CMP({
+        formUrl: '/f/u17l1s6/p/sponsored_ad_1.u17l1n1564/normal/action.uP?pP_action=updatePostRating', 
+        successFunction: postRatingUpdated_Pluto_1396_u17l1n1564_365663_
+      });
+
+      var postRatingForm = $('form[id="postRatingFormId332418328Pluto_1396_u17l1n1564_365663_"]');
+      for (i = 0; i < postRatingForm.length; i++) {
+        var id = postRatingForm[i].id;
+        instance.addFormHandler('#' + id);
+      }
+      
+              $("#multimediaContainerIdPluto_1396_u17l1n1564_365663_").hide();        
+            
+    
+      
+    } catch (err) {
+      $('#errorBlockContainer209219735Pluto_1396_u17l1n1564_365663_').show();
+      $('#errorBlock209219735Pluto_1396_u17l1n1564_365663_').text(err);
+    }     
+  });     
+</script></div></div><div class="up-portlet-wrapper-bottom"><div class="up-portlet-wrapper-bottom-inner"></div></div></div></div></div></div></div></div></div></div><div id="portalPageFooter" class="fl-container-flex"><div id="portalPageFooterInner"><div id="footerHelpLinks"><a href="https://servicedesk.calpoly.edu/content/my_cp_support/index">Help &amp; FAQ</a> |
+        <a href="/help/feedback.html">Send Feedback</a> | 
+        <a href="https://www.calpoly.edu/privacy/">Privacy Notice</a> | 
+        <a href="https://accessibility.calpoly.edu/website-accessibility-statement">Web Accessibility Statement</a> | 
+        <span>04</span></div></div></div><div id="dojoMenus" class="dialogs" style="display:none;"><div id="portalDropWarning" class="drop-warning" style="display:none;"><p>This portlet cannot be moved here. The portlet underneath is locked.</p></div></div><script type="text/javascript">
+       up.jQuery(document).ready(function(){
+          
+          up.LayoutPreferences(
+            "body",
+            {
+              tabContext: 'header',
+              numberOfPortlets: '4',
+              portalContext: '',
+              mediaPath: '/media/skins/universality',
+              currentSkin: 'wintergreen',
+              subscriptionsSupported: 'true',
+              layoutPersistenceUrl: '/api/layout',
+              channelRegistryUrl: '/api/portletList',
+              subscribableTabUrl: '/api/subscribableTabs.json',
+              messages: {
+                  confirmRemoveTab: 'Are you sure you want to remove this tab?',
+                  confirmRemovePortlet: 'Are you sure you want to remove this portlet?',
+                  addTabLabel: 'My Tab',
+                  column: 'Column',
+                  columns: 'Columns',
+                  fullWidth: 'Full-width',
+                  narrowWide: 'Narrow, wide',
+                  even: 'Even',
+                  wideNarrow: 'Wide, narrow',
+                  narrowWideNarrow: 'Narrow, wide, narrow',
+                  searchForStuff: 'Search for Portlets',
+                  allCategories: 'ALL',
+                  persistenceError: 'Error persisting layout change'
+              }
+            }
+          );
+       });
+    </script><script type="text/javascript">
+            // Run function when document is ready (fully loaded).
+            up.jQuery(document).ready(function(){
+                // set function for determining and setting height.
+                contentHeight = function() {
+                    // delcare and set vars.
+                    var contentLoc, sidebarLoc, contentHt, sidebarHt;
+                    var contentLoc = up.jQuery('#portalPageBodyLayout');
+                    var sidebarLoc = up.jQuery('#portalSidebarInner');
+                    var contentHt = contentLoc.height();
+                    var sidebarHt = sidebarLoc.height();
+                    // compare and set height.
+                    if (contentHt > sidebarHt) {
+                        sidebarLoc.height(contentHt);
+                    }
+                }
+        contentHeight();
+            });
+        </script></div></div><script type="text/javascript">
+            up.analytics = up.analytics || {};
+            up.analytics.host = 'myportal.calpoly.edu';
+            up.analytics.portletData = {"33_u17l1n1842_365663":{"fname":"myclasses","executionTimeNano":12111365},"1396_u17l1n1564_365663":{"fname":"sponsored_ad_1","executionTimeNano":7644097},"62_u17l1n1869_365663":{"fname":"directoryinfo","executionTimeNano":7215699}};
+            up.analytics.pageData = {"urlState":"NORMAL","executionTimeNano":91044636,"tab":{"id":1,"fragmentName":"home-lo","tabName":"Home","displayString":"Home (home-lo)"}};
+        </script></body></html>
